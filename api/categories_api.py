@@ -3,6 +3,8 @@ from flask import Flask, request, Response
 
 api = Flask(__name__)
 
+api.config.from_pyfile('config.py')
+
 @api.route('/categories', methods=['PUT', ])
 def categories():
     if not request.is_json:
