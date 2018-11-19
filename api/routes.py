@@ -1,7 +1,7 @@
 import json
 from flask import request, Response
 from api import api_app
-from api.models import Category
+
 
 @api_app.route('/categories', methods=['PUT', ])
 def categories():
